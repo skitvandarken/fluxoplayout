@@ -3,8 +3,16 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: absolute
+
 }
 
 h1, h2, h3 {
     color: white;
+    font-family: Archivo, Helvetica, sans-serif;
+}
+
+p{
+    color: white;
+    font-family: Archivo, Helvetica, sans-serif;
 }

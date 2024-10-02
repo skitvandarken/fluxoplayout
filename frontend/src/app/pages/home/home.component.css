@@ -1,0 +1,15 @@
+.card{
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.botao :hover{
+    background-color: rgb(0, 81, 168);
+    transition: 100ms;
+    cursor: pointer !important;
+}
+
+.imagem :hover{
+}
