@@ -1,0 +1,30 @@
+<nav class="uk-navbar-container uk-navbar-transparent uk-sticky" uk-sticky="top: 200; animation: uk-animation-slide-top; cls-active: navbar-scrolled" style="border-bottom: 1px solid black;">
+    <div class="uk-container">
+        <div uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#" aria-label="Back to Home">
+                    <img src="images/logo.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="uk-navbar-right">
+                <button routerLink="/layouts" class="uk-button uk-button-default uk-button-primary uk-border-rounded">
+                    Área do Cliente
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.26/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.26/dist/js/uikit-icons.min.js"></script>
+<script>
+    document.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".uk-navbar-container");
+        if (window.scrollY > 50) {
+            navbar.classList.add("navbar-scrolled");
+        } else {
+            navbar.classList.remove("navbar-scrolled");
+        }
+    });
+</script>
+
+

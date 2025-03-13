@@ -1,0 +1,41 @@
+/* Estilo padrão da navbar */
+.uk-navbar-transparent {
+    background-color: black !important;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Estilo da navbar ao rolar a página */
+.navbar-scrolled {
+    background-color: black !important;
+    border-bottom: 1px solid black !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para efeito de elevação */
+}
+
+/* Estilo do logo */
+.logo {
+    width: 120px;
+    height: auto;
+    transition: width 0.3s ease;
+}
+
+@media (max-width: 960px) {
+    .logo {
+        width: 60px;
+    }
+}
+
+/* Estilo do botão */
+.uk-button-primary {
+    background-color: #0f6ecd;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.uk-button-primary:hover {
+    background-color: #0f6ecd;
+    transform: translateY(-2px);
+}
+
+.uk-button-primary:active {
+    transform: translateY(0);
+}
