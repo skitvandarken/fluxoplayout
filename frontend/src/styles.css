@@ -1,26 +1,14 @@
-html{
-   
-} 
 
-body{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    background-color: white;
-    font-family: "Gidole", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
-a, p, li, nav, div, h1, h2, h3, h4, h5, h6, span, button, input, label, select, textarea{
-    font-family: "Gidole", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
-.uk-navbar-nav>li>a{
-    font-family: "Gidole", sans-serif;
-    font-weight: 400;
-    font-style: bolder;
-}
+body, a, p, li, nav,  h1, h2, h3, ul, i, footer {
+    font-family: 'Ubuntu', sans-serif !important;
+     
+      font-style: normal;
+      
+  }
+  html, body { height: 100%; }
+  body { margin: 0; 
+    font-family: 'Ubuntu', sans-serif !important;
+  }
+  

@@ -1,18 +1,73 @@
-<nav class="uk-navbar-container">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/css/uikit.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+  <nav class="uk-navbar-container  uk-navbar-transparent shadow-bottom uk-light" uk-navbar>
+    <div class="uk-navbar-left uk-container">
+     <ul class="uk-navbar-nav uk-visible@m">
+        <li><a href="#"  class="texto-offcanva" uk-scroll>Início</a></li>
+        <li><a href="#funcionalidade"  class="texto-offcanva" uk-scroll="offset: 100">Funcionalidades</a></li>
+        <li><a href="#planos" class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 100">Planos e Preços</a></li>
+        <li><a href="#sobre" class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 100">Sobre a Empresa</a></li>
+        <li><a href="#suporte" class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 100">Contato e Suporte</a></li> 
+      </ul>
+    </div>
+    <div class="uk-navbar-right" style="margin-right:3%">
+     
+      <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-nav" uk-toggle>
+        <span uk-navbar-toggle-icon></span>
+      </a>
+    </div>
+  </nav>
+
+  <div id="offcanvas-nav" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+      <!-- Close button with arrow -->
+    
+      <ul class="uk-nav uk-nav-default">
+        
+        <li><a class="texto-offcanva" routerLink="/inicio" uk-scroll="offset: 80">> Início</a></li>
+        <li><a class="texto-offcanva" routerLink="/servicos" uk-scroll="offset: 80">> Funcionalidades</a></li>
+        <li><a class="texto-offcanva" routerLink="/servicos" uk-scroll="offset: 80">> Vantagens</a></li>
+        <li><a class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 80">> Planos e Preços</a></li>
+        <li><a class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 80">> Sobre a Empresa</a></li>
+        <li><a class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 80">> FAQ</a></li>
+        <li><a class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 80">> Contato e Suporte</a></li>    
+
+        <li>  <button class="uk-offcanvas-close" type="button" uk-close>
+             <!-- Custom arrow icon -->
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>
+
+<!--  <nav class="uk-navbar-container">
     <div class="uk-container">
         <div uk-navbar>
 
             <div class="uk-navbar-left">
 
                 <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="#">Início</a></li>
-                    <li class="uk-active"><a href="#">Funcionalidades</a></li>
-                    <li class="uk-active"><a href="#">Demo</a></li>
-                    <li class="uk-active"><a href="#">Planos & Preços</a></li>
-                    <li class="uk-active"><a href="#">Sobre a Empresa</a></li>
-
-                    <li class="uk-active"><a href="#">FAQ</a></li>
-                    <li class="uk-active"><a href="#">Contacto e Suporte</a></li>
+                    <li class="uk-active"><a href="#"><b>Início</b></a></li>
+                    <li class="uk-active"><a href="#"><b>Funcionalidades</b></a></li>
+                    <li class="uk-active"><a href="#"><b>Planos & Preços</b></a></li>
+                    <li class="uk-active"><a href="#"><b>Sobre a Empresa</b></a></li>
+                    <li class="uk-active"><a href="#"><b>FAQ</b></a></li>
+                    <li class="uk-active"><a href="#"><b>Contacto e Suporte</b></a></li>
 
 
 
@@ -24,4 +79,4 @@
 
         </div>
     </div>
-</nav>
+</nav> -->

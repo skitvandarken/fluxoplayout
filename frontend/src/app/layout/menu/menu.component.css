@@ -1,0 +1,68 @@
+/* Make the navbar container sticky */
+nav {
+    background: linear-gradient(to right, #ff0000, #bd3584, #ae0a47);
+    z-index: 1000; /* Ensure it overlays other elements */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4); /* Optional: Adds a shadow */
+}
+
+/* UIkit Sticky Navbar Alternative (if needed) */
+.uk-sticky {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 4000;
+}
+
+/* Rest of your existing styles remain the same */
+.uk-navbar-nav > li > a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #fff !important;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+
+.uk-navbar-nav > li > a:hover {
+    color: #ffe3e3 !important;
+}
+
+/* Animated underline effect */
+.uk-navbar-nav > li > a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.4s ease-in-out;
+}
+
+.uk-navbar-nav > li > a:hover::after {
+    width: 100%;
+}
+
+/* Offcanvas & other styles */
+.uk-offcanvas-bar {
+    background-color: red;
+    color: white !important;
+}
+
+.logotop {
+    text-align: left;
+    height: 100px;
+    width: auto;
+    display: flex;
+}
+
+.texto-offcanva {
+    color: white !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    font-family: 'Ubuntu', sans-serif !important;
+}
