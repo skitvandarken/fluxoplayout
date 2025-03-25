@@ -12,3 +12,27 @@ body, a, p, li, nav,  h1, h2, h3, ul, i, footer {
     font-family: 'Ubuntu', sans-serif !important;
   }
   
+.whatsapp  {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #25D366;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 50px;
+  cursor: pointer;
+  display: flex;
+  height: 30px;
+  width: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.whatsapp-button :hover{
+  background-color: #1a9347 !important;
+  color: white !important;
+
+
+}
+  

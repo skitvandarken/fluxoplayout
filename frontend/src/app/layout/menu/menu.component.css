@@ -35,7 +35,7 @@ nav {
     content: '';
     position: absolute;
     width: 0;
-    height: 8px;
+    height: 4px;
     border-radius: 10px;
     bottom: 0;
     left: 0;
@@ -55,10 +55,13 @@ nav {
 
 .logotop {
     text-align: left;
-    height: 100px;
-    width: auto;
+    height: auto;
+    width: 200px;
     display: flex;
 }
+
+
+
 
 .texto-offcanva {
     color: white !important;

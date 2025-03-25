@@ -27,11 +27,34 @@
     transform: scale(1.02); /* Slight grow effect */
   }
   
+
+
+
   /* Active State */
-  .fundo-bt:active {
+  .fundo-bt-4:active {
     transform: scale(0.98); /* Pressed effect */
   }
-.uk-card-default{
+
+
+  .fundo-bt-4 {
+    /* Base Style */
+    background: linear-gradient(to right, #bd3584, #ff0000);
+    color: white;
+  
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover Effect */
+  .fundo-bt-4:hover {
+    opacity: 0.9; /* Simple hover feedback */
+    transform: scale(1.02); /* Slight grow effect */
+  }
+
+
+  .uk-card-default{
     border-color: #9d0000b8;
     border-width: 1px;
     border-style: solid;
@@ -139,4 +162,14 @@
   
   .fundo-bt-3:hover::after {
     left: 100%;
+  }
+
+
+  .logo{
+    height: 50px;
+    width: auto;
+  }
+
+  .border-modal{
+    border-radius: 25px
   }
