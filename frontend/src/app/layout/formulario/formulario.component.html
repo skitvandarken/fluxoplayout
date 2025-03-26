@@ -1,0 +1,122 @@
+<div class="uk-container">
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top uk-margin-large-bottom"
+        uk-grid>
+
+
+        <div class="fundo-formulario">
+            <div class="uk-container uk-padding uk-border-rounded uk-margin-medium-left uk-margin-medium-right">
+                <form [formGroup]="contactForm" (ngSubmit)="submitForm($event)" class="uk-form-stacked uk-text-left">
+                    <!-- Qual é a sua região -->
+                    <div class="uk-margin">
+                        <h1 style="font-weight: 600; color: #fff;" class="texto uk-text-left texto">
+                            Solicite uma demostração gratuita
+                        </h1>
+                        <label class="texto uk-form-label" for="tipo">Escolha uma opção</label>
+                        <div class="uk-form-controls">
+                            <select class="uk-border-rounded uk-select" id="tipo" formControlName="tipo" required>
+                                <option value="empresa"> Somos uma empresa </option>
+                                <option value="singular">Sou cliente singular</option>
+                               
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Primeiro Nome -->
+                    <div class="uk-margin">
+                        <label class="texto texto uk-form-label" for="fullName">Nome completo</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-border-rounded uk-input" id="fullName" type="text"
+                                formControlName="fullName" required />
+                        </div>
+                    </div>
+
+
+                    <div *ngIf="contactForm.get('fullName')?.invalid && (contactForm.get('fullName')?.dirty || contactForm.get('fullName')?.touched)"
+                        class="uk-text-danger">
+                        <ng-container *ngIf="contactForm.get('fullName')?.errors?.['required']">
+                          Campo obrigatorio </ng-container>
+                        <ng-container *ngIf="contactForm.get('fullName')?.errors?.['pattern']">
+                           Formato inválido </ng-container>
+                    </div>
+
+                    <!-- Último Nome -->
+                    <div class="uk-margin">
+                        <label class="texto uk-form-label" for="lastName">{{ 'ultimo_nome' | translate }}</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-border-rounded uk-input" id="lastName" type="text"
+                                formControlName="lastName" required />
+                        </div>
+                    </div>
+
+                    <div *ngIf="contactForm.get('lastName')?.invalid && (contactForm.get('lastName')?.dirty || contactForm.get('lastName')?.touched)"
+                        class="uk-text-danger">
+                        <ng-container *ngIf="contactForm.get('lastName')?.errors?.['required']">
+                            {{ 'campo_obrigatorio' | translate }} </ng-container>
+                        <ng-container *ngIf="contactForm.get('lastName')?.errors?.['pattern']">
+                            {{ 'formato_invalido' | translate }} </ng-container>
+                    </div>
+
+                    <!-- Seu E-Mail -->
+                    <div class="uk-margin">
+                        <label class="texto uk-form-label" for="email">{{ 'seu_email' | translate }}</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input uk-border-rounded" id="email" type="email" formControlName="email"
+                                required />
+                        </div>
+                    </div>
+
+                    <div *ngIf="contactForm.get('email')?.invalid && (contactForm.get('email')?.dirty || contactForm.get('email')?.touched)"
+                        class="uk-text-danger">
+                        <ng-container *ngIf="contactForm.get('email')?.errors?.['required']">
+                            {{ 'campo_obrigatorio' | translate }} </ng-container>
+                        <ng-container *ngIf="contactForm.get('email')?.errors?.['pattern']">
+                            {{ 'formato_invalido_email' | translate }} </ng-container>
+                    </div>
+
+                    <!-- És cliente Angola Cables -->
+                    <div class="uk-margin">
+                        <label class="texto uk-form-label">{{ 'es_cliente_angola_cables' | translate }}</label>
+                        <div class="uk-form-controls">
+                            <label class="texto">
+                                <input class="uk-radio texto" type="radio" formControlName="angolaCables" value="sim"
+                                    required /> {{ 'sim' | translate }}
+                            </label>
+                            <label class="texto uk-margin-left">
+                                <input class="uk-radio" type="radio" formControlName="angolaCables" value="nao" /> {{
+                                'nao' | translate }}
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Mensagem -->
+                    <div class="uk-margin">
+                        <label class="texto uk-form-label" for="message">{{ 'mensagem' | translate }}</label>
+                        <div class="uk-form-controls">
+                            <textarea class="uk-textarea uk-border-rounded" id="message" rows="5"
+                                formControlName="message" required></textarea>
+                        </div>
+                    </div>
+
+                    <div *ngIf="contactForm.get('message')?.invalid && (contactForm.get('message')?.dirty || contactForm.get('message')?.touched)"
+                        class="uk-text-danger">
+                        <ng-container *ngIf="contactForm.get('message')?.errors?.['required']">
+                            {{ 'campo_obrigatorio' | translate }} </ng-container>
+                        <ng-container *ngIf="contactForm.get('message')?.errors?.['pattern']">
+                            {{ 'formato_invalido_email' | translate }} </ng-container>
+                    </div>
+
+
+                    <!-- Submit Button -->
+                    <div class="uk-width-1-1 uk-margin-medium-top">
+                        <button type="submit" class="uk-button uk-button-primary uk-border-rounded">
+                            {{ 'enviar_mensagem' | translate }}
+                        </button>
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

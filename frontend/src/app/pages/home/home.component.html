@@ -14,8 +14,8 @@
                     Kwanzas.</h3>
                 <p class="off-white" uk-margin>
 
-                    <button class="uk-button fundo-bt uk-button-large uk-border-pill">Teste gratuitamente agora
-                    </button>
+                    <a href="#gratis" class="uk-button fundo-bt uk-button-large uk-border-pill" uk-toggle>Teste gratuitamente agora
+                    </a>
                 </p>
             </div>
 
@@ -230,39 +230,49 @@
                 <!-- This is the modal -->
                 <div id="gratis" uk-modal>
                     <div class="border-modal uk-modal-dialog uk-modal-body">
-                        <h2 class="uk-modal-title"> Peça uma demonstração grátis</h2>
                       
-                        <!-- Formulário -->
+                         <h1>Solicite uma<br> demostração gratuita </h1> 
 
                         <form class="uk-form-stacked contact-form" (submit)="sendEmail($event)">
                             <label>Nome</label>
 
                             <div class="uk-margin">
-                                <input class="uk-background-muted uk-input uk-border-pill" type="text" name="user_name">
+                                <input class="uk-background-muted uk-input uk-border-pill" placeholder="Introduza o seu nome ou da sua empresa" type="text" name="user_name" required>
                             </div>
 
                             <label>E-mail</label>
 
                           <div class="uk-margin">
-                            <input class=" uk-input uk-width-1-2 uk-background-muted uk-border-pill uk-input" type="email" name="user_email">
+                            <input class=" uk-input uk-width-1-2 uk-background-muted uk-border-pill uk-input" placeholder="suaempresa@dominio.com"   type="email"
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                            title="Por favor, insira um e-mail válido (exemplo: nome@dominio.com)"
+                            required name="email">
                         </div>
-
+ 
                         <label>Endereço</label>
                         <div class="uk-margin">
-                           
-                            <input class="uk-background-muted uk-input uk-border-pill" type="text" name="endereco">
+                            
+                            <input class="uk-background-muted uk-input uk-border-pill" type="text" placeholder="Rua, Nº, Bairro, Cidade, Pais" name="endereco" required>
                         </div>
 
                         <label>NIF</label>
                         <div class="uk-margin">
-                            <input class="uk-background-muted uk-input uk-border-pill uk-input uk-width-1-2 " type="text" name="nif">
+                            <input class="uk-background-muted uk-input uk-border-pill uk-input uk-width-1-2  "    onkeypress="return event.charCode >= 48 && event.charCode <= 57"        oninput="this.value = this.value.replace(/\D/g, '')"
+                            placeholder="Número de Identificação Fiscal" type="text" name="nif" required>
+                            <p>O NIF deve conter 9 dígitos </p>
                         </div>
 
 
                         
                         <label>Contacto</label>
                         <div class="uk-margin">
-                            <input class="uk-background-muted uk-input uk-border-pill uk-input uk-width-1-2 " type="text" name="contacto">
+                            <input class="uk-background-muted uk-input uk-border-pill uk-input uk-width-1-2 "  placeholder="+244 999 999 999" 
+                            type="tel"
+                            name="contacto" 
+                            pattern="^\+?[\d\s\-]{8,15}$"
+                            title="Por favor insira um número válido (ex: +244 900 000 000)"
+                            
+                            oninput="this.value = this.value.replace(/[^\d\+\-\s]/g, '')" name="contacto" required>
                         </div>
 
                         
@@ -274,6 +284,7 @@
                        
                           </form>
                     
+
                     </div>
                 </div>
 

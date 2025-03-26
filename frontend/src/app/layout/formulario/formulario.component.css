@@ -1,0 +1,25 @@
+.texto {
+    font-family: "Sora", sans-serif;
+    color: white !important;   
+}
+
+.fundo-formulario{
+    background: linear-gradient(180deg, rgb(18, 72, 130) , rgb(0, 6, 27), rgb(0, 25, 49));
+    border-radius: 10px;
+}
+
+
+.uk-button-primary {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+    background: linear-gradient(125deg, rgb(0, 44, 110), rgba(0, 97, 187, 1), rgb(0, 63, 122)) !important;
+    color: #ffffff; /* Ensure text is visible on the gradient */
+    border: none; /* Remove any default border */
+    padding: 10px 20px; /* Add padding for better appearance */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.uk-button-primary:hover {
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    color: #e6f7ff; /* Slightly lighter text color on hover */
+}

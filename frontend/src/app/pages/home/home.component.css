@@ -109,6 +109,10 @@
   .whatsapp-button:hover {
     border-color:  #128C7E !important;
     transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 171, 91, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    transform: scale(1.05);
   }
   
   .whatsapp-button:active {

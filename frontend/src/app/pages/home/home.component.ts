@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { MenuComponent } from '../../layout/menu/menu.component';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
+import { FormularioComponent } from '../../layout/formulario/formulario.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
-    MenuComponent, 
+    MenuComponent, FormularioComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
