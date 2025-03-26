@@ -225,12 +225,57 @@
                 <h3 style=" color: #ff0000;" class="uk-card-title"><b>0,00 Kz</b></h3>
 
 
-                <a href="#webtv" class="uk-button uk-border-pill fundo-bt" uk-toggle >Solicitar Agora</a>
+                <a href="#gratis" class="uk-button uk-border-pill fundo-bt" uk-toggle>Solicitar Agora</a>
 
+                <!-- This is the modal -->
+                <div id="gratis" uk-modal>
+                    <div class="border-modal uk-modal-dialog uk-modal-body">
+                        <h2 class="uk-modal-title"> Peça uma demonstração grátis</h2>
+                      
+                        <!-- Formulário -->
 
-                
+                        <form class="uk-form-stacked contact-form" (submit)="sendEmail($event)">
+                            <label>Nome</label>
+
+                            <div class="uk-margin">
+                                <input class="uk-background-muted uk-input uk-border-pill" type="text" name="user_name">
+                            </div>
+
+                            <label>E-mail</label>
+
+                          <div class="uk-margin">
+                            <input class=" uk-input uk-width-1-2 uk-background-muted uk-border-pill uk-input" type="email" name="user_email">
+                        </div>
+
+                        <label>Endereço</label>
+                        <div class="uk-margin">
+                           
+                            <input class="uk-background-muted uk-input uk-border-pill" type="text" name="endereco">
+                        </div>
+
+                        <label>NIF</label>
+                        <div class="uk-margin">
+                            <input class="uk-background-muted uk-input uk-border-pill uk-input uk-width-1-2 " type="text" name="nif">
+                        </div>
+
+                      
+
+                        
+                          <button class="uk-button uk-button-large uk-border-pill fundo-bt-4" type="submit" >CONFIRMAR</button>
+
+                       
+                          </form>
+                    
+                    </div>
+                </div>
+
             </div>
         </div>
+
+
+
+
+
         <div class="uk-margin-small-top">
             <div class="card uk-card uk-card-default uk-card-body uk-width-1-1@m">
                 <h3 style=" color: #ff0000;" class="uk-card-title"><b>WebTV</b></h3>
@@ -246,68 +291,12 @@
                 <h3 style=" color: #ff0000;" class="uk-card-title"><b>99.999,00 Kz</b></h3>
                 <p>/mês</p>
 
-                <a href="#webtv" class="uk-button uk-border-pill fundo-bt" uk-toggle >Solicitar Agora</a>
+                <a target="_blank"
+                    href="https://q28hpkmheelk.upmind.app/order/product?pid=052d137e-08d2-4153-532a-5495163789e6"
+                    class="uk-button uk-border-pill fundo-bt">Solicitar Agora</a>
             </div>
         </div>
 
-        <!-- Web TV -->
-        <div id="webtv" uk-modal>
-            <div class="uk-modal-dialog border-modal uk-modal-body">
-                <h2 class="uk-modal-title">Faça seu pedido <br> e receba uma factura</h2>
-                <p>Após submeter seu pedido enviaremos uma factura para o seu e-mail com as coordenadas bancárias para proceder ao pagamento e receber o seu acesso.</p>
-
-                <form class="uk-form-stacked">
-
-                    <div class="uk-margin">
-
-                       
-                        <div class="uk-form-controls uk-margin-small-top">
-                            <label class="uk-form-label" for="form-stacked-text">Seu nome ou da sua empresa</label>
-                            <input class="uk-input uk-border-pill uk-background-muted" id="form-stacked-text" type="text" placeholder="">
-                        </div>
-
-                        <div class="uk-margin  uk-margin-small-top">
-                            <label class="uk-form-label" for="form-stacked-text">Número de Identificação Fiscal (NIF)</label>
-                            <input class="uk-input uk-form-width-medium uk-border-pill uk-background-muted" type="text" placeholder="" aria-label="Medium">
-                        </div>
-
-                        <div class="uk-form-controls  uk-margin-small-top">
-                            <label class="uk-form-label" for="form-stacked-text">Endereço de cobrança</label>
-                            <input class="uk-input uk-border-pill uk-background-muted" id="form-stacked-text" type="text" placeholder="">
-                        </div>
-
-                        <div class="uk-form-controls uk-margin-small-top">
-                            <label class="uk-form-label" for="form-stacked-text">E-mail</label>
-                            <input class="uk-input uk-border-pill uk-background-muted" id="form-stacked-text" type="text" placeholder="">
-                        </div>
-
-
-                        <div class="uk-margin">
-                            <label class="uk-form-label" for="form-stacked-text">Contacto telefónico</label>
-                            <input  class="uk-input uk-form-width-medium uk-border-pill uk-background-muted" type="text" placeholder="" aria-label="">
-                        </div>
-                    
-                    </div>
-                
-                    <label class="uk-form-label" for="form-stacked-text">Planos escolhido</label>
-
-                    <select class="uk-select uk-border-pill" id="form-stacked-select">
-                        <option>Web TV</option>
-                        <option>Institucional</option>
-                        <option>Broadcaster</option>
-
-                    </select>
-                
-                
-                </form>
-               
-
-                <p class="uk-text-right">
-                    <button class="uk-button border-modal uk-button-default uk-modal-close uk-margin-small-right" type="button">Cancelar</button>
-                    <button class="uk-button border-modal fundo-bt-4" type="button">Confirmar</button>
-                </p>
-            </div>
-        </div>
 
 
 
@@ -325,68 +314,12 @@
                 </ul>
                 <h3 style=" color: #ff0000;" class="uk-card-title"><b>399.999,00 Kz</b></h3>
                 <p>/mês</p>
-                <a href="#institucional"  class="uk-button uk-border-pill fundo-bt " uk-toggle >Solicitar Agora</a>
+                <a target="_blank"
+                    href="https://q28hpkmheelk.upmind.app/order/product?pid=93e8d569-d072-4523-252a-54e853121607 "
+                    class="uk-button uk-border-pill fundo-bt ">Solicitar Agora</a>
             </div>
         </div>
 
-        <!-- Institucional-->
-        <div id="institucional" uk-modal>
-            <div class="uk-modal-dialog border-modal uk-modal-body">
-                <h2 class="uk-modal-title">Faça seu pedido <br> e receba uma factura</h2>
-                <p>Após submeter seu pedido enviaremos uma factura para o seu e-mail com as coordenadas bancárias para proceder ao pagamento e receber o seu acesso.</p>
-
-                <form class="uk-form-stacked">
-
-                    <div class="uk-margin">
-
-                       
-                        <div class="uk-form-controls uk-margin-small-top">
-                            <label class="uk-form-label" for="form-stacked-text">Seu nome ou da sua empresa</label>
-                            <input class="uk-input uk-border-pill uk-background-muted" id="form-stacked-text" type="text" placeholder="">
-                        </div>
-
-                        <div class="uk-margin  uk-margin-small-top">
-                            <label class="uk-form-label" for="form-stacked-text">Número de Identificação Fiscal (NIF)</label>
-                            <input class="uk-input uk-form-width-medium uk-border-pill uk-background-muted" type="text" placeholder="" aria-label="Medium">
-                        </div>
-
-                        <div class="uk-form-controls  uk-margin-small-top">
-                            <label class="uk-form-label" for="form-stacked-text">Endereço de cobrança</label>
-                            <input class="uk-input uk-border-pill uk-background-muted" id="form-stacked-text" type="text" placeholder="">
-                        </div>
-
-                        <div class="uk-form-controls uk-margin-small-top">
-                            <label class="uk-form-label" for="form-stacked-text">E-mail</label>
-                            <input class="uk-input uk-border-pill uk-background-muted" id="form-stacked-text" type="text" placeholder="">
-                        </div>
-
-
-                        <div class="uk-margin">
-                            <label class="uk-form-label" for="form-stacked-text">Contacto telefónico</label>
-                            <input  class="uk-input uk-form-width-medium uk-border-pill uk-background-muted" type="text" placeholder="" aria-label="">
-                        </div>
-                    
-                    </div>
-                
-                    <label class="uk-form-label" for="form-stacked-text">Planos escolhido</label>
-
-                    <select class="uk-select uk-border-pill" id="form-stacked-select">
-                        <option>Institucional</option>
-                        <option>Web TV</option>
-                        <option>Broadcaster</option>
-
-                    </select>
-                
-                
-                </form>
-               
-
-                <p class="uk-text-right">
-                    <button class="uk-button border-modal uk-button-default uk-modal-close uk-margin-small-right" type="button">Cancelar</button>
-                    <button class="uk-button border-modal fundo-bt-4" type="button">Confirmar</button>
-                </p>
-            </div>
-        </div>
 
 
         <div class="uk-margin-small-top">
@@ -406,66 +339,9 @@
                 <h3 style=" color: #ff0000;" class="uk-card-title"><b>999.999,00 Kz</b></h3>
                 <p>/mês</p>
 
-                <a href="#broadcaster" class="uk-button uk-border-pill fundo-bt" uk-toggle >Solicitar Agora</a>
-            </div>
-        </div>
-
-         <!-- Broadcaster-->
-         <div id="broadcaster" uk-modal>
-            <div class="uk-modal-dialog border-modal uk-modal-body">
-                <h2 class="uk-modal-title">Faça seu pedido <br> e receba uma factura</h2>
-                <p>Após submeter seu pedido enviaremos uma factura para o seu e-mail com as coordenadas bancárias para proceder ao pagamento e receber o seu acesso.</p>
-
-                <form class="uk-form-stacked">
-
-                    <div class="uk-margin">
-
-                       
-                        <div class="uk-form-controls uk-margin-small-top">
-                            <label class="uk-form-label" for="form-stacked-text">Seu nome ou da sua empresa</label>
-                            <input class="uk-input uk-border-pill uk-background-muted" id="form-stacked-text" type="text" placeholder="">
-                        </div>
-
-                        <div class="uk-margin  uk-margin-small-top">
-                            <label class="uk-form-label" for="form-stacked-text">Número de Identificação Fiscal (NIF)</label>
-                            <input class="uk-input uk-form-width-medium uk-border-pill uk-background-muted" type="text" placeholder="" aria-label="Medium">
-                        </div>
-
-                        <div class="uk-form-controls  uk-margin-small-top">
-                            <label class="uk-form-label" for="form-stacked-text">Endereço de cobrança</label>
-                            <input class="uk-input uk-border-pill uk-background-muted" id="form-stacked-text" type="text" placeholder="">
-                        </div>
-
-                        <div class="uk-form-controls uk-margin-small-top">
-                            <label class="uk-form-label" for="form-stacked-text">E-mail</label>
-                            <input class="uk-input uk-border-pill uk-background-muted" id="form-stacked-text" type="text" placeholder="">
-                        </div>
-
-
-                        <div class="uk-margin">
-                            <label class="uk-form-label" for="form-stacked-text">Contacto telefónico</label>
-                            <input  class="uk-input uk-form-width-medium uk-border-pill uk-background-muted" type="text" placeholder="" aria-label="">
-                        </div>
-                    
-                    </div>
-                
-                    <label class="uk-form-label" for="form-stacked-text">Planos escolhido</label>
-
-                    <select class="uk-select uk-border-pill" id="form-stacked-select">
-                        <option>Broadcaster</option>
-                        <option>Institucional</option>
-                        <option>Web TV</option>
-
-                    </select>
-                
-                
-                </form>
-               
-
-                <p class="uk-text-right">
-                    <button class="uk-button border-modal uk-button-default uk-modal-close uk-margin-small-right" type="button">Cancelar</button>
-                    <button class="uk-button border-modal fundo-bt-4" type="button">Confirmar</button>
-                </p>
+                <a href="#modal-example" target="_blank"
+                    href="https://q28hpkmheelk.upmind.app/order/product?pid=5983e230-6e75-40de-d50b-24981d210d76"
+                    class="uk-button uk-border-pill fundo-bt" uk-toggle>Solicitar Agora</a>
             </div>
         </div>
 
@@ -474,8 +350,6 @@
 
 
 </div>
-
-
 
 
 <div id="sobre" class="fundo-bg-1">
@@ -512,6 +386,7 @@
     </div>
 
 </div>
+
 
 
 
@@ -669,7 +544,8 @@
                     <h1 style="color: white"><b>Ainda precisa de ajuda?</b> </h1>
 
                     <h3 style="color:white"> O nosso suporte é 24/7 e humano, vamos ajudar sempre que for necessário.
-                        <br>Fale com um técnico</h3>
+                        <br>Fale com um técnico
+                    </h3>
 
                     <a href="https://wa.me/244937754502/?text=Ol%C3%A1%2C%20estou%20interessado%20em%20servi%C3%A7o%20vosso%2C%20h%C3%A1%20algu%C3%A9m%20dispon%C3%ADvel%20agora%20para%20me%20atender%3F"
                         target="_blank" class="whatsapp-button">

@@ -137,7 +137,7 @@
     box-shadow: 0 6px 20px rgba(0, 171, 91, 0.4);
     transform: translateY(-2px);
   }
- Active/Pressed Effect */
+ /*Active/Pressed Effect */
   .fundo-bt-3:active {
     transform: translateY(0);
     box-shadow: 0 2px 10px rgba(0, 171, 91, 0.3);
