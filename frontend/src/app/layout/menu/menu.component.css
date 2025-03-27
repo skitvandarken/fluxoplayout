@@ -69,3 +69,22 @@ nav {
     font-size: 12px !important;
     font-family: 'Ubuntu', sans-serif !important;
 }
+
+
+
+@media (max-width: 960px) {
+    .logotop {
+      width: 150px; /* Adjust as needed */
+    }
+  }
+  
+  /* Ensure proper spacing between logo and menu button */
+  .uk-navbar-left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .uk-navbar-right {
+    margin-right: 15px;
+  }

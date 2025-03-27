@@ -14,13 +14,13 @@
     <div class="uk-navbar-left uk-container">
 
      <ul class="uk-navbar-nav uk-visible@m">
-      <li>      <a class="uk-navbar-item  uk-logo" routerLink="/inicio"><img class="logotop" src="images/logo-white.png" alt="Logo"></a>
-      </li>
-        <li><a href="#"  class="texto-offcanva" uk-scroll>Início</a></li>
+      <li>      <a href="#" class="uk-navbar-item  uk-logo"  uk-scroll="offset: 100"><img class="logotop" src="images/logo-white.png" alt="Logo"></a>
+      </li> 
+        <li><a href="#"  class="texto-offcanva" uk-scroll>Início</a></li> 
         <li><a href="#funcionalidade"  class="texto-offcanva" uk-scroll="offset: 100">Funcionalidades</a></li>
-        <li><a href="#planos" class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 100">Planos e Preços</a></li>
-        <li><a href="#sobre" class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 100">Sobre a Empresa</a></li>
-        <li><a href="#suporte" class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 100">Contacto e Suporte</a></li> 
+        <li><a href="#planos" class="texto-offcanva"  uk-scroll="offset: 100">Planos e Preços</a></li>
+        <li><a href="#sobre" class="texto-offcanva"uk-scroll="offset: 100">Sobre a Empresa</a></li>
+        <li><a href="#suporte" class="texto-offcanva"  uk-scroll="offset: 100">Contacto e Suporte</a></li> 
       </ul>
     </div>
     <div class="uk-navbar-right" style="margin-right:3%">
@@ -34,6 +34,7 @@
 
   <div id="offcanvas-nav" uk-offcanvas="flip: false; overlay: true">
 
+    <a class="uk-navbar-item  uk-logo" routerLink="/inicio"><img class="logotop" src="images/logo-white.png" alt="Logo"></a>
 
     
     <div class="uk-offcanvas-bar">
@@ -45,13 +46,11 @@
         <li>      <a class="uk-navbar-item  uk-logo" routerLink="/inicio"><img class="logotop" src="images/logo-white.png" alt="Logo"></a>
         </li>
         
-        <li><a class="texto-offcanva" routerLink="/inicio" uk-scroll="offset: 80">> Início</a></li>
-        <li><a class="texto-offcanva" routerLink="/servicos" uk-scroll="offset: 80">> Funcionalidades</a></li>
-        <li><a class="texto-offcanva" routerLink="/servicos" uk-scroll="offset: 80">> Vantagens</a></li>
-        <li><a class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 80">> Planos e Preços</a></li>
-        <li><a class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 80">> Sobre a Empresa</a></li>
-        <li><a class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 80">> FAQ</a></li>
-        <li><a class="texto-offcanva" routerLink="/historia" uk-scroll="offset: 80">> Contacto e Suporte</a></li>    
+        <li><a href="#"  class="texto-offcanva" uk-scroll="offset: 80">Início</a></li> 
+        <li><a href="#funcionalidade"  class="texto-offcanva" uk-scroll="offset: 80">Funcionalidades</a></li>
+        <li><a href="#planos" class="texto-offcanva"  uk-scroll="offset: 80">Planos e Preços</a></li>
+        <li><a href="#sobre" class="texto-offcanva"uk-scroll="offset: 80">Sobre a Empresa</a></li>
+        <li><a href="#suporte" class="texto-offcanva"  uk-scroll="offset: 80">Contacto e Suporte</a></li>   
 
         <li>  <button class="uk-offcanvas-close" type="button" uk-close>
              <!-- Custom arrow icon -->

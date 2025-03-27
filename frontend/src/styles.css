@@ -7,8 +7,7 @@ body, a, p, li, nav,  h1, h2, h3, ul, i, button, footer {
       font-style: normal;
       
   }
-  html, body { height: 100%; }
-  body { margin: 0; 
+  body { 
     font-family: 'Ubuntu', sans-serif !important;
   }
   
