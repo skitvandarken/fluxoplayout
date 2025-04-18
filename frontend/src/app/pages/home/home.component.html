@@ -281,9 +281,11 @@
 
                           <button class="uk-button uk-button-large uk-border-pill fundo-bt-4" type="submit" >CONFIRMAR</button>
 
-                       
+                     
                           </form>
-                    
+                          <div *ngIf="isLoading" class="loading-overlay">
+                            <img src="https://i.gifer.com/ZZ5H.gif" alt="Enviando..." />
+                          </div>
 
                     </div>
                 </div>

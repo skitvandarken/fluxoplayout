@@ -4,6 +4,8 @@ import { TranslateService } from '@ngx-translate/core';
 import emailjs, {type EmailJSResponseStatus} from '@emailjs/browser';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-formulario',
   standalone: true,
@@ -19,7 +21,7 @@ export class FormularioComponent {
 }
 
 contactForm: FormGroup;
-constructor(private translate: TranslateService, private fb: FormBuilder) {
+constructor(private router: Router,private translate: TranslateService, private fb: FormBuilder) {
 
   this.contactForm = this.fb.group({
     tipo: ['', Validators.required],
@@ -52,8 +54,9 @@ submitForm(event: Event) {
     publicKey: '9HFwqoPfqWMMnzdk8'
   })
   .then(() => {
-    console.log('SUCESSO');
     window.alert('Mensagem enviada com sucesso! 🎉');
+    window.location.href = 'https://playout.fluxo-digital.com/';
+    // Limpa o formulário após o envio
     this.contactForm.reset();
   })
   .catch((error: EmailJSResponseStatus) => {
@@ -61,6 +64,5 @@ submitForm(event: Event) {
     window.alert('Não foi possível enviar sua candidatura.');
   });
 }
-
 
 }
