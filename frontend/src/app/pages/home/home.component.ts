@@ -4,6 +4,7 @@ import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 import { FormularioComponent } from '../../layout/formulario/formulario.component';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-home',
@@ -35,14 +36,35 @@ export class HomeComponent {
         () => {
           this.isLoading = false;      
           this.cdr.detectChanges();
-          window.alert('Mensagem enviada com sucesso! 🎉');
+          
+          Swal.fire({
+            title: 'Sucesso!',
+            text: 'Mensagem enviada com sucesso! 🎉',
+            background: '#4CAF50', // verde
+            color: '#ffffff',
+            icon: 'success',
+            confirmButtonColor: '#FF0000',
+            confirmButtonText: 'VOLTAR AO INÍCIO',
+          }).then(() => {
+            window.location.href = 'https://playout.fluxo-digital.com/';
+          });          
+
           console.log('SUCCESS!');
-          window.location.href = 'https://playout.fluxo-digital.com/';
         },
         (error) => {
           this.isLoading = false;
           this.cdr.detectChanges();
-          console.log('FAILED...', (error as EmailJSResponseStatus).text);
+          Swal.fire({
+            title: 'Sucesso!',
+            text: 'Mensagem enviada com sucesso! 🎉',
+            background: '#FF0000', // vermelho
+            color: '#ffffff',
+            icon: 'success',
+            confirmButtonColor: '#4CAF50',
+            confirmButtonText: 'VOLTAR AO INÍCIO',
+          }).then(() => {
+            window.location.href = 'https://playout.fluxo-digital.com/';
+          });
         },
       );
   }
